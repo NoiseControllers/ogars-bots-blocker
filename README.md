@@ -6,4 +6,4 @@
 
 3. Bocker = Currently Testing my stuff to block 2. from 1. Not just this but some more security if this way will work.
 
-4. Is just this "Readme" For As Time As I Haven't Finished My Tests!
+4. Is just this "Readme" For As Time As I Haven't Finished My Tests! And Getting The Wanted Result!
