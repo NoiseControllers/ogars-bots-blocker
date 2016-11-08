@@ -64,15 +64,15 @@ $ **`` nano ubuntu-autoinstaller.sh``**
 
 Info. 
 
-Wrote Server Port > The private port which isn't suggested to be for public. isn't protected.
+Wrote **Server Port** > The private port which isn't suggested to be for public. isn't protected.
 
-Wrote Stats Port > wWhatever you want.
+Wrote **Stats Port** > wWhatever you want.
 
-Wrote Public Port > Port Which you will connect to play which is protected.
+Wrote **Public Port** > Port Which you will connect to play which is protected.
 
 then
 
 $ **``./ubuntu-autoinstaller.sh``**
 
-You Are Done! if you change server port then change this too /etc/nginx/sites-enabled/default replace port in proxy_pass.
+You Are Done! if you change **server game port** then change this too **/etc/nginx/sites-enabled/default** replace port in **proxy_pass** with your new game port.
 and do one restart **``service nginx restart``**
