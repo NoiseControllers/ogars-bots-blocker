@@ -47,7 +47,7 @@ mkdir game
 cd game/
 git clone https://github.com/AJS-development/Ogar-unlimited.git | lolcat -a -s 100
 cd Ogar-unlimited/src
-npm install | lolcat -a -s 100
+npm install
 sed -i "/serverPort = 443/c\serverPort = $sp" ~/game/Ogar-unlimited/src/settings/advConfig.ini
 sed -i "/serverStatsPort = 88/c\serverStatsPort = $stp" ~/game/Ogar-unlimited/src/settings/advConfig.ini
 clear
