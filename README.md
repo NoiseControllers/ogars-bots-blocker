@@ -38,6 +38,7 @@ now wrote ``*nginx -t*`` on terminal, if you can see this
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 `
+
 Then you're ok! ``*service nginx restart*``
 
 Now start server and connect it on "domainename" example "ws.pandadev.net" and your port example :88, so "ws.pandadev.net:88"
@@ -51,3 +52,27 @@ what if anyone will add bots on port 88? then upload /var/log/nginx/access_log f
 
 This can be more better if anyone of those dev's who developed ogarul, multiogar, or ogar use "nodejs user-agent" so we can block directly without doing this stuf with nginx! with those user-agent we also can block every proxy which can be used for spam!. So if anyone of those dev's is reading this, then bruh take some care :D.
 
+#Auto Installers.
+
+1. - Ubuntu 14.04
+
+$ **``wget https://raw.githubusercontent.com/systemroot/ogars-bots-blocker/master/ubuntu-autoinstaller.sh``**
+
+$ **`` chmod +x ubuntu-autoinstaller.sh``**
+
+$ **`` nano ubuntu-autoinstaller.sh``**
+
+Info. 
+
+Wrote Server Port > The private port which isn't suggested to be for public. isn't protected.
+
+Wrote Stats Port > wWhatever you want.
+
+Wrote Public Port > Port Which you will connect to play which is protected.
+
+then
+
+$ **``./ubuntu-autoinstaller.sh``**
+
+You Are Done! if you change server port then change this too /etc/nginx/sites-enabled/default replace port in proxy_pass.
+and do one restart **``service nginx restart``**
