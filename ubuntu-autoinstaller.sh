@@ -5,13 +5,13 @@
 # OS     : Ubuntu 14.04
 # ******************************************
 
-# Wrote Server Port.
+# Server Port.
 sp=(6666)
 
-# Wrote Stats Port.
+# Stats Port.
 stp=(6661)
 
-# Wrote Public Port which you will connect to play.
+# Public Port when you will connect.
 pp=(6969)
 
 # Wrote a domain or subdomain if you want if not don't touch!
@@ -57,8 +57,8 @@ cd /etc/nginx/sites-enabled/
 rm -Rf default
 echo '
 server {
-        listen             $pp;
-        server_name        $domain;
+        listen             ppub;
+        server_name        domainn;
         access_log /var/log/nginx/monitor_log combined;
         location / {
         if ($http_user_agent ~ "WOW64" ) {
@@ -74,7 +74,7 @@ server {
            return 444;
         }
         access_log /var/log/nginx/monitor_log combined;
-        proxy_pass         http://localhost:$sp;
+        proxy_pass         http://localhost:srvpp;
         proxy_set_header   X-Real-IP $remote_addr;
         proxy_set_header   Host $host;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -83,7 +83,11 @@ server {
         proxy_set_header   Connection "upgrade";
         }
 }
-' >> /etc/nginx/sites-enabled/default
+' > /etc/nginx/sites-enabled/default
+sed -i 's@        listen             ppub;@        listen             '$pp';@g' /etc/nginx/sites-enabled/default
+sed -i 's@        server_name        domainn;@        server_name        '$domain';@g' /etc/nginx/sites-enabled/default
+sed -i 's@        proxy_pass         http://localhost:srvpp;@        proxy_pass         http://localhost:'$sp';@g' /etc/nginx/sites-enabled/default
+
 clear
 service nginx restart
 echo "Work Done!" | lolcat -a -s 100
