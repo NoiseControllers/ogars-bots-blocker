@@ -5,13 +5,13 @@
 # OS     : Ubuntu 14.04
 # ******************************************
 
-# Server Port.
+# Wrote Server Port which isn't protected.
 sp=(6666)
 
 # Stats Port.
 stp=(6661)
 
-# Public Port when you will connect.
+# Public Port which you will connect to play. protected.
 pp=(6969)
 
 # Wrote a domain or subdomain if you want if not don't touch!
