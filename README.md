@@ -54,13 +54,15 @@ This can be more better if anyone of those dev's who developed ogarul, multiogar
 
 #Auto Installers.
 
-1. - Ubuntu 14.04
+1. - Ubuntu 14.04 , with All Ogar Versions. (Ogar, Ogarul, Multiogar, MultiOgar By Megabyte918)
 
-$ **``wget https://raw.githubusercontent.com/systemroot/ogars-bots-blocker/master/ubuntu-autoinstaller.sh``**
+First change the port which you was using for your server then start this.
 
-$ **`` chmod +x ubuntu-autoinstaller.sh``**
+$ **``wget https://raw.githubusercontent.com/systemroot/ogars-bots-blocker/master/ubuntu-mmode.sh``**
 
-$ **`` nano ubuntu-autoinstaller.sh``**
+$ **``chmod +x ubuntu-mmode.sh``**
+
+$ **``nano ubuntu-mmode.sh``**
 
 Info. 
 
@@ -72,7 +74,7 @@ Wrote **Public Port** > Port Which you will connect to play which is protected.
 
 then
 
-$ **``./ubuntu-autoinstaller.sh``**
+$ **``./ubuntu-mmode.sh``**
 
 You Are Done! if you change **server game port** then change this too **/etc/nginx/sites-enabled/default** replace port in **proxy_pass** with your new game port.
 and do one restart **``service nginx restart``**
