@@ -5,13 +5,13 @@
 # OS     : Ubuntu 14.04
 # ******************************************
 
-# Server Port.
+# Wrote Server Port.
 sp=(6666)
 
-# Stats Port.
+# Wrote Stats Port.
 stp=(6661)
 
-# Public Port when you will connect.
+# Wrote Public Port which you will connect to play.
 pp=(6969)
 
 # Wrote a domain or subdomain if you want if not don't touch!
