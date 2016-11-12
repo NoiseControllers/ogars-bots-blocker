@@ -33,6 +33,8 @@ echo "Let's Start" | lolcat -a -s 100
 sudo apt-get install git libssl-dev openssl -y | lolcat -a -s 100
 sudo apt-get install dnsutils build-essential -y | lolcat -a -s 100
 clear
+sudo add-apt-repository ppa:nginx/stable
+sudo apt-get update -y | lolcat -a -s 100
 sudo apt-get install nginx -y | lolcat -a -s 100
 service nginx restart | lolcat -a -s 100
 cd /etc/nginx/sites-enabled/
