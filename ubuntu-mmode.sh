@@ -8,9 +8,6 @@
 # Wrote Server Port which isn't protected.
 sp=(6666)
 
-# Stats Port.
-stp=(6661)
-
 # Public Port which you will connect to play. protected.
 pp=(6969)
 
@@ -37,6 +34,14 @@ sudo add-apt-repository ppa:nginx/stable
 sudo apt-get update -y | lolcat -a -s 100
 sudo apt-get install nginx -y | lolcat -a -s 100
 service nginx restart | lolcat -a -s 100
+apt-get install geoip-database libgeoip1 -y
+mv /usr/share/GeoIP/GeoIP.dat /usr/share/GeoIP/GeoIP.dat_bak
+cd /usr/share/GeoIP/
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+gunzip GeoIP.dat.gz
+mv /etc/nginx/nginx.conf /etc/nginx/nginx.oldfile.old.ok
+cd /etc/nginx/
+wget https://raw.githubusercontent.com/systemroot/ogars-bots-blocker/master/etc/nginx/nginx.conf
 cd /etc/nginx/sites-enabled/
 rm -Rf default
 echo '
@@ -77,4 +82,4 @@ service nginx restart
 echo "Work Done!" | lolcat -a -s 100
 echo "Start Server node index.js" | lolcat -a -s 100
 ip="$(curl api.ipify.org)"
-echo "Play http://old.ogarul.io/?ip=${ip}:$pp" | lolcat -a -s 100
+echo "Play On http://old.ogarul.io/?ip=${ip}:$pp" | lolcat -a -s 100
