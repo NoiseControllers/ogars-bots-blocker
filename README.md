@@ -8,49 +8,29 @@
 
 4. It's Done!
 
-This pretty easy can deny bot's who come from different ip's (sock's proxy's) on your server!
+This isn't a nodejs script. This is a port forward with nginx on linux OS's with security rules.
+No one can found the real server port. because port scanners doesn't detect websocket port directly.
 
-First create your server and run it in some port not default port. 
+What this will do?
 
-example my server is running on port :6767
+This will forward example your real public server port 69 to your server port which you are running on gameconfing.js 443.
+you need to use a different port not 443!.
+And this will scan On Connect all those who connect to your server.
 
-Now install nginx
+And will not allow to connect on server more than 1 time. on the same time // To Stop Powerups.
 
-ubuntu : ``*apt-get -y install nginx; service nginx start*``
+Will block old browser version. // To Stop PolarsBots.
 
-CentOS : ``*yum -y install nginx; service nginx restart*``
+Will Drop Connection For those who take too much time to join. // Only proxy's/Socks Want too much time.
 
-``*cd /etc/nginx/sites-available/*``
+Will limit Bandwidth to 5MB/s. If SomeOne Go More Than 5MB/s Session Will Be Purged. Player Will Get Disconnect. 
+but player can join again in moment.
 
-``*nano default*``
+Will Deny China Country. And Anonymous Proxy's.
 
-Delete all line's into that, and put those https://github.com/systemroot/ogars-bots-blocker/blob/master/site.conf
+And more..
 
-but replace domain "ws.pandadev.net"
-
-you can read that listen 88; so that will be your server port from now!
-
-you can read  proxy_pass http://localhost:6767; there is my server running so replace just 6767 with your server port!
-
-now wrote ``*nginx -t*`` on terminal, if you can see this 
-
-`
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
-`
-
-Then you're ok! ``*service nginx restart*``
-
-Now start server and connect it on "domainename" example "ws.pandadev.net" and your port example :88, so "ws.pandadev.net:88"
-or directly IP:88 
-
-
-TO KNOW!
-Bot's can't come from port 88. but they will come if someone find your real server port. but if you use nginx in a different server and do proxy_pass http://yourOgarServerIp:6767;
-then no one will be able to find your real server port!.
-what if anyone will add bots on port 88? then upload /var/log/nginx/access_log file somewhere get the link and post it here on a issue! then i'll add a new rule. 
-
-This can be more better if anyone of those dev's who developed ogarul, multiogar, or ogar use "nodejs user-agent" so we can block directly without doing this stuf with nginx! with those user-agent we also can block every proxy which can be used for spam!. So if anyone of those dev's is reading this, then bruh take some care :D.
+You can change those however you want. Nginx work with Windows 2. But i don't Own VPS windows at this time so i can't explain installation steps...
 
 #Auto Installers.
 
