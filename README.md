@@ -1,6 +1,6 @@
 # ogars-bots-blocker
 
-1. Ogars = OgarUL, MultiOgar, Ogar Official.
+1. Ogars = All Versions Of Agario Private Servers.
 
 2. Bots = Minions who someone add in your server.
 
