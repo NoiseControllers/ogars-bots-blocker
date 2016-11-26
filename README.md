@@ -18,6 +18,11 @@ you need to use a different port not 443!.
 And this will scan On Connect all those who connect to your server.
 
 And will not allow to connect on server more than 1 time. on the same time // To Stop Powerups.
+When i say "will disallow.." that doesn't mean will disallow you to re'join on server till you die in game.
+isn't needed to wait you can refresh page as much as you want you will be able to connect directly in a sec.
+but how this work o.O ?!
+well open 2 tabs on chrome and on botch try to connect your server. u'll see what i'm talking.
+
 
 Will block old browser version. // To Stop PolarsBots.
 
