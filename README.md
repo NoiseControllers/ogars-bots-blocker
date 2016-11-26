@@ -1,8 +1,8 @@
 # ogars-bots-blocker
 
-1. **Ogars** = ``All Versions Of Agario Private Servers.``
+1. **Ogars**  = ``All Versions Of Agario Private Servers.``
 
-2. **Bots** = ``Minions who someone add in your server.``
+2. **Bots**   = ``Minions who someone add in your server.``
 
 3. **Bocker** = ``Currently Testing my stuff to block 2. from 1. Not just this but some more security if this way will work.``
 
@@ -21,7 +21,7 @@ And this will scan On Connect all those who connect to your server.
 When i say "will disallow.." that doesn't mean will disallow you to re'join on server till you die in game.
 isn't needed to wait you can refresh page as much as you want you will be able to connect directly in a sec.
 but how this work o.O ?!
-well open 2 tabs on chrome and on botch try to connect your server. u'll see what i'm talking.
+well open 2 tabs on chrome and on both try to connect your server. u'll see what i'm talking.
 
 
 **``Will block old browser version.``** // To Stop PolarsBots.
