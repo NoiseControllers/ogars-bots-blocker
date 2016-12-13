@@ -78,17 +78,17 @@ First open **gameserver.ini**
 
 Wrote somewhere this **customPort = 69** that **69** should be your port which is used with nginx to forward players to real server port ex 443.
 
-Now open **GameServer.js** And below this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L58
+Now open **GameServer.js** And below this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L60
 
 Wrote New line **customPort = 69,**
 
 Scroll down find trackers content. 
 
-And change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1351
+And change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1333
 
 **port: this.config.serverPort,** => **port: this.config.customPort,**
 
-change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1381
+change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1363
 
 **'&sport=' + this.config.serverPort +** => **'&sport=' + this.config.customPort +**
 
