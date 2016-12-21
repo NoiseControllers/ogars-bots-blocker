@@ -28,7 +28,7 @@ well open 2 tabs on chrome and on both try to connect your server. u'll see what
 
 **``Will Drop Connection For those who take too much time to join.``** // Only proxy's/Socks Want too much time.
 
-**``Will limit Bandwidth to 5MB/s. If SomeOne Go More Than 5MB/s Session Will Be Purged. Player Will Get Disconnect. 
+**``Will limit Bandwidth to 10MB/s. If SomeOne Go More Than 10MB/s Session Will Be Purged. Player Will Get Disconnect. 
 but player can join again in moment.``**
 
 **``Will Deny China Country. And Anonymous Proxy's.``**
