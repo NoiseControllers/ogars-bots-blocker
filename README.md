@@ -88,7 +88,7 @@ And change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/
 
 **port: this.config.serverPort,** => **port: this.config.customPort,**
 
-change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1363
+change this https://github.com/Megabyte918/MultiOgar-Edited/blob/master/src/GameServer.js#L1309
 
 **'&sport=' + this.config.serverPort +** => **'&sport=' + this.config.customPort +**
 
