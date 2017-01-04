@@ -13,7 +13,7 @@ No one can found the real server port. because port scanners doesn't detect webs
 
 **``What this will do?``**
 
-This will forward example your real public server port 69 to your server port which you are running on gameconfing.js 443.
+This will forward example your real public server port 69 to your server port which you are running on gameserver.ini 443.
 you need to use a different port not 443!.
 And this will scan On Connect all those who connect to your server.
 
