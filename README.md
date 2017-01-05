@@ -59,13 +59,15 @@ then
 
 $ **``./ubuntu-mmode.sh``**
 
+Open gameserver.ini and change **serverBind = "0.0.0.0"** to => **serverBind = "127.0.0.1"**
+that means your server will run locally and you can connect only from nginx, so this will prevent port scanners
+to find your real server port!
+
 You Are Done! if you change **server game port** then change this too **/etc/nginx/sites-enabled/default** replace port in **proxy_pass** with your new game port.
 and do one restart **``service nginx restart``**
 
 -
 # Deny Permanently!
-The only problem with this way is because if anyone will try to scan your ports one by one can find your real server port!
-the chance about this from 100, is 20-25 xP. 
 But there is another way which you can do. you can set up your server with nginx as i have wrote. after that you can conntact me jump here https://github.com/systemroot/ogars-bots-blocker/issues/1 it's my discord chat and contact me and send me your server ip:port the port which you wroted on nginx! and i will send you one ip:port which you can access your server that is a proxy and no one will be able to scan your ip for open ports anymore (: . 
 The problem here si because i haven't found how to put fake ip for gametrackers example for ogar-tracker.tk ! 
 btw i'll wrote if i found it.
