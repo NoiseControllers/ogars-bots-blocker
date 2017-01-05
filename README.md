@@ -61,7 +61,7 @@ $ **``./ubuntu-mmode.sh``**
 
 Open gameserver.ini and change **serverBind = "0.0.0.0"** to => **serverBind = "127.0.0.1"**
 that means your server will run locally and you can connect only from nginx, so this will prevent port scanners
-to find your real server port!
+to find your real server port! *(Don't do this if you want to publish your server on gametracker surch as ogar-tracker.tk!)*
 
 You Are Done! if you change **server game port** then change this too **/etc/nginx/sites-enabled/default** replace port in **proxy_pass** with your new game port.
 and do one restart **``service nginx restart``**
