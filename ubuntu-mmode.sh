@@ -5,11 +5,11 @@
 # OS     : Ubuntu 14.04
 # ******************************************
 
-# Wrote Server Port which isn't protected.
-sp=(6666)
+# Wrote Server Port which isn't protected. If you won't don't touch isn't problem!
+sp=(443)
 
 # Public Port which you will connect to play. protected.
-pp=(6969)
+pp=(61)
 
 # Wrote a domain or subdomain if you want if not don't touch!
 domain=(default_server)
