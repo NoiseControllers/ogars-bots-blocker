@@ -13,8 +13,7 @@ No one can found the real server port. because port scanners doesn't detect webs
 
 **``What this will do?``**
 
-This will forward example your real public server port 69 to your server port which you are running on gameserver.ini 443.
-you need to use a different port not 443!.
+This will forward example your real public server port 61 to your server port which you are running on gameserver.ini 443.
 And this will scan On Connect all those who connect to your server.
 
 **``And will not allow to connect on server more than 1 time. on the same time``** // To Stop Powerups.
