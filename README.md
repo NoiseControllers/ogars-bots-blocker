@@ -1,4 +1,4 @@
-#New Version Comming!
+#New Version Coming!
 https://github.com/systemroot/obb-core , Ogars-Bot-Blocker Core is coming with new features, You should read README to see when is done!.
 
 # ogars-bots-blocker
