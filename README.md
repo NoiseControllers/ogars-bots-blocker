@@ -12,7 +12,7 @@ https://github.com/systemroot/obb-core , Ogars-Bot-Blocker Core is coming with n
 4. **``It's Done!``**
 
 This isn't a nodejs script. This is a port forward with nginx on linux OS's with security rules.
-No one can found the real server port. because port scanners doesn't detect websocket port directly.
+~~No one can found the real server port. because port scanners doesn't detect websocket port directly.~~ Thanks To @gimmo now you can wrote serverBind 127.0.0.1, and your server will be accessible only from nginx port!
 
 **``What this will do?``**
 
