@@ -1,3 +1,6 @@
+#New Version Comming!
+https://github.com/systemroot/obb-core , Ogars-Bot-Blocker Core is coming with new features, You should read README to see when is done!.
+
 # ogars-bots-blocker
 
 1. **Ogars**  = ``All Versions Of Agario Private Servers.``
